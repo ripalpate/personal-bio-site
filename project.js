@@ -36,7 +36,9 @@ const createProjectCards = () => {
         newProjectCard += `<p>${projects[i].url}</p>`;
         newProjectCard += `<h4>${projects[i].githubUrl}</h4>`;
         newProjectCard += `</div>`;
+        if (projects[i].available === true){
+        printToDom(newProjectCard, 'projectsPage');
     };
-    printToDom(newProjectCard, 'projectsPage');
+    };
 };
 createProjectCards();

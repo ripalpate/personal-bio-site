@@ -4,17 +4,16 @@ body {
 .name {
     padding: 5px 15px; 
 }
-#navLinks {
+#nav_links {
     margin: 15px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     list-style: none;
 }
 #navToBio, #navToTechnologies {
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
-
-.main_nav, #navLinks {
+.main_nav, #nav_links {
     display: flex;
 }
 .main_nav {
@@ -24,12 +23,13 @@ body {
 }
 #technologiesPage, .technologies_list {
     display: flex;
+    background-color: antiquewhite;
+}
+.technologies_list {
     list-style: none;
 }
-#technologiesPage {
-    flex-direction: row;
-    justify-content: space-around;
-    
+.list_item {
+    padding: 5px 20px;
 }
 .cardContainer {
     background-color: lightskyblue;

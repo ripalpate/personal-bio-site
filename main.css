@@ -1,6 +1,46 @@
 body {
     background-color: lightcoral;
 }
+.name {
+    padding: 5px 15px; 
+}
+#navLinks {
+    margin: 15px;
+    padding: 10px 15px;
+    list-style: none;
+}
+#navToBio, #navToTechnologies {
+    padding-right: 20px;
+}
+
+
+.main_nav, #navLinks {
+    display: flex;
+}
+.main_nav {
+    flex-direction: row; 
+    justify-content: space-between;
+    background-color: lightgray;
+}
+#technologiesPage, .technologies_list {
+    display: flex;
+    list-style: none;
+}
+#technologiesPage {
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
 .cardContainer {
     background-color: lightskyblue;
+    width: 48%;
+    display: inline-block;
+    margin:1.5% 0.5%;
+    border-radius: 10px;
+    text-align: center;
+}
+.page-footer {
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-around;
 }

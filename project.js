@@ -31,7 +31,7 @@ const createProjectCards = () => {
         newProjectCard += `<h2>${projects[i].title}</h2>`;
         newProjectCard += `<img src="${projects[i].screenshot}"></img>`;
         newProjectCard += `<p>${projects[i].description}</p>`;
-        newProjectCard += `<li>${projects[i].technologiesUsed}</li>`;
+        newProjectCard += `<h4>${projects[i].technologiesUsed}</h4>`;
         newProjectCard += `<h3>${projects[i].available}</h3>`;
         newProjectCard += `<a href="https://${projects[i].url}" target="_blank">View Project</a>`;
         newProjectCard += `<p><a href="https://${projects[i].githubUrl}" target="_blank">Git Hub</a><p>`;

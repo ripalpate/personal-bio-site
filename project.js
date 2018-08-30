@@ -27,14 +27,14 @@ const printToDom = (stringToPrint, divId) => {
 const createProjectCards = () => {
     let newProjectCard = '';
     for (let i = 0; i < projects.length; i++) {
-        newProjectCard += `<div>`;
+        newProjectCard += `<div class="cardContainer">`;
         newProjectCard += `<h2>${projects[i].title}</h2>`;
-        newProjectCard += `<h3>${projects[i].screenshot}</h3>`;
+        newProjectCard += `<img src="${projects[i].screenshot}"></img>`;
         newProjectCard += `<p>${projects[i].description}</p>`;
         newProjectCard += `<li>${projects[i].technologiesUsed}</li>`;
         newProjectCard += `<h3>${projects[i].available}</h3>`;
-        newProjectCard += `<p>${projects[i].url}</p>`;
-        newProjectCard += `<h4>${projects[i].githubUrl}</h4>`;
+        newProjectCard += `<a href="https://${projects[i].url}" target="_blank">View Project</a>`;
+        newProjectCard += `<p><a href="https://${projects[i].githubUrl}" target="_blank">Git Hub</a><p>`;
         newProjectCard += `</div>`;
         if (projects[i].available === true){
         printToDom(newProjectCard, 'projectsPage');

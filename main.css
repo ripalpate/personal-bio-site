@@ -24,9 +24,11 @@ body {
 #technologiesPage, .technologies_list {
     display: flex;
     background-color: antiquewhite;
+    justify-content: space-around;
 }
 .technologies_list {
     list-style: none;
+    width: 100%;
 }
 .list_item {
     padding: 5px 20px;

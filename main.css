@@ -1,5 +1,5 @@
 body {
-    background-color: lightcoral;
+    background-image: url("http://www.dvd-ppt-slideshow.com/images/ppt-background/background-11.jpg");
 }
 .name {
     padding: 5px 15px; 
@@ -8,6 +8,7 @@ body {
     margin: 15px;
     padding: 10px 20px;
     list-style: none;
+    font-size:1.2em;
 }
 #navToBio, #navToTechnologies {
     padding-right: 30px;
@@ -20,13 +21,25 @@ body {
     flex-direction: row; 
     justify-content: space-between;
     background-color: lightgray;
+    border-radius: 10px;
+}
+.name_title {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+.description {
+    font-size: 1.2em;
 }
 #technologiesPage, .technologies_list {
     display: flex;
-    background-color: antiquewhite;
+    background-color: lightgray;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 .technologies_list {
     list-style: none;
+    width: 100%;
 }
 .list_item {
     padding: 5px 20px;
@@ -40,7 +53,7 @@ body {
     text-align: center;
 }
 .page-footer {
-    background-color: lightseagreen;
     display: flex;
     justify-content: space-around;
+    border-radius: 10px;
 }

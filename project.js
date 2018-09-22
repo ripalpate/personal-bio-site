@@ -1,3 +1,4 @@
+// Projects Array of object
 let projects = [
     {
         title: "Cool Project", 
@@ -19,11 +20,13 @@ let projects = [
     }
 ];
 
+// funtion for Print to DOM
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = stringToPrint;
 };
 
+// function to print projects on webpage
 const createProjectCards = () => {
     let newProjectCard = '';
     for (let i = 0; i < projects.length; i++) {
@@ -42,3 +45,17 @@ const createProjectCards = () => {
     };
 };
 createProjectCards();
+
+
+
+const aboutMeElem = document.getElementById('navToBio');
+const technologiesElem = document.getElementById('navToTechnologies');
+const projectsPageElem = document.getElementById('navToProjects');
+
+// function for click on About Me
+const aboutMe = () => {
+aboutMeElem.setAttribute('href', "#bioPage");
+}
+// EventListener for About Me 
+aboutMeElem.addEventListener('click', aboutMe);
+

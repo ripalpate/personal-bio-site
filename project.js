@@ -54,8 +54,21 @@ const projectsPageElem = document.getElementById('navToProjects');
 
 // function for click on About Me
 const aboutMe = () => {
-aboutMeElem.setAttribute('href', "#bioPage");
+    aboutMeElem.setAttribute('href', '#bioPage');
 }
 // EventListener for About Me 
 aboutMeElem.addEventListener('click', aboutMe);
 
+//function for clcik on technologies
+const technologies = () => {
+    technologiesElem.setAttribute('href', '#technologiesPage' );
+}
+//event listener for Technologies
+technologiesElem.addEventListener('click', technologies);
+
+//function for clcik on projects
+const projectsDisplay = () => {
+    projectsPageElem.setAttribute('href', '#projectsPage' );
+}
+//event listener for Projects
+projectsPageElem.addEventListener('click', projectsDisplay);

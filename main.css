@@ -22,6 +22,9 @@ body {
 .main_nav, #nav_links {
     display: flex;
 }
+#navToBio {
+    text-decoration: none;
+}
 .main_nav {
     flex-direction: row; 
     justify-content: flex-end;

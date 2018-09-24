@@ -88,17 +88,3 @@ const contacts = () => {
 }
 // event listener for Projects
 contactElem.addEventListener('click', contacts);
-
-// function for sticky footer
-window.onscroll =() => {stickyNavBar()};
-
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
-
-const stickyNavBar = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}

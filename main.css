@@ -1,3 +1,8 @@
+*{
+    margin-left:0px;
+    margin-right: 0px;
+    
+}
 body {
     background-color:#3eb4c1;
 }
@@ -5,12 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1 0 auto; 
+    width:100%;
 }
 .name {
     padding: 5px 15px; 
 }
 #nav_links {
-    margin: 15px; 
+    margin: 15px;
     padding: 10px 20px;
     list-style: none;
     font-size:1.2em;
@@ -18,7 +24,6 @@ body {
 #navToHome, #navToBio, #navToTechnologies, #navToProjects {
     padding-right: 30px;
 }
-
 .main_nav, #nav_links {
     display: flex;
 }
@@ -29,16 +34,12 @@ body {
 .main_nav {
     flex-direction: row; 
     justify-content: flex-end;
-    background-color:#ffcc99;
-    border-radius: 10px;
-}
-.sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-    padding: 10px;
-  }
-
+    width:100%;
+    color:white;
+    background-color: black;
+}
 .main_header {
     display: flex;
     width:100%;
@@ -60,9 +61,8 @@ body {
 }
 #biopage {
     height: 60%;
-    background-color: #ffcccc;
-    border-radius: 10px;
     margin-bottom: 20px;
+    padding-top :50px;
 }
 .name_title {
     font-family: 'Lobster Two', cursive;
@@ -77,8 +77,7 @@ body {
 }
 #technologiesPage{
     height: 40%;
-    background-color: #ffcccc;
-    border-radius: 10px;
+    padding-top:50px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -89,7 +88,6 @@ body {
 }
 .technologies_list_container, .technologies_list {
     display: flex;
-    background-color: #ffcccc;
     justify-content: space-around;
     border-radius: 10px;
 }
@@ -101,8 +99,7 @@ body {
     padding: 5px 20px;
 }
 .project_cards_container{
-    background-color: #ffcccc;
-    border-radius: 10px;
+    padding-top:50px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -113,10 +110,9 @@ body {
     font-family: 'Lobster Two', cursive;
 }
 .cardContainer {
-    width: 48%;
-    display: inline-block;
-    margin:1.5% 0.5%;
-    border-radius: 10px;
+    /* width: 48%; */
+    display:block;
+    /* margin:1.5% 0.5%; */
     text-align: center;
 }
 .page-footer {
@@ -124,10 +120,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     flex-shrink: 0;
-    background-color:#ffcccc;
-    border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    padding-top:50px;
    
 }
 .footer_heading {

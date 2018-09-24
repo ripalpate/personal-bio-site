@@ -15,7 +15,7 @@ body {
     list-style: none;
     font-size:1.2em;
 }
-#navToBio, #navToTechnologies {
+#navToBio, #navToTechnologies, #navToProjects {
     padding-right: 30px;
 }
 

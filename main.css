@@ -15,7 +15,7 @@ body {
     list-style: none;
     font-size:1.2em;
 }
-#navToBio, #navToTechnologies, #navToProjects {
+#navToHome, #navToBio, #navToTechnologies, #navToProjects {
     padding-right: 30px;
 }
 
@@ -29,9 +29,16 @@ body {
 .main_nav {
     flex-direction: row; 
     justify-content: flex-end;
-    background-color: #ffcccc;
+    background-color:#ffcc99;
     border-radius: 10px;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+  }
+
 .main_header {
     display: flex;
     width:100%;

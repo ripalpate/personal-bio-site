@@ -29,6 +29,7 @@ const printToDom = (stringToPrint, divId) => {
 // function to print projects on webpage
 const createProjectCards = () => {
     let newProjectCard = '';
+        newProjectCard=`<h3 class="project_header">Projects</h3>`;
     for (let i = 0; i < projects.length; i++) {
         newProjectCard += `<div class="cardContainer">`;
         newProjectCard += `<h2>${projects[i].title}</h2>`;

@@ -29,6 +29,7 @@ const printToDom = (stringToPrint, divId) => {
 // function to print projects on webpage
 const createProjectCards = () => {
     let newProjectCard = '';
+        newProjectCard=`<h3 class="project_header">Projects</h3>`;
     for (let i = 0; i < projects.length; i++) {
         newProjectCard += `<div class="cardContainer">`;
         newProjectCard += `<h2>${projects[i].title}</h2>`;
@@ -88,17 +89,3 @@ const contacts = () => {
 }
 // event listener for Projects
 contactElem.addEventListener('click', contacts);
-
-// function for sticky footer
-window.onscroll =() => {stickyNavBar()};
-
-const navbar = document.getElementById("navbar");
-const sticky = navbar.offsetTop;
-
-const stickyNavBar = () => {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}

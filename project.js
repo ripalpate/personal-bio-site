@@ -46,11 +46,11 @@ const createProjectCards = () => {
 };
 createProjectCards();
 
-
-
+// Variables to collect navigation element
 const aboutMeElem = document.getElementById('navToBio');
 const technologiesElem = document.getElementById('navToTechnologies');
 const projectsPageElem = document.getElementById('navToProjects');
+const contactElem = document.getElementById('navToContacts');
 
 // function for click on About Me
 const aboutMe = () => {
@@ -72,3 +72,10 @@ const projectsDisplay = () => {
 }
 //event listener for Projects
 projectsPageElem.addEventListener('click', projectsDisplay);
+
+//function for click on Contacts
+const contacts = () => {
+    contactElem.setAttribute('href', "#contactPage");
+}
+// event listener for Projects
+contactElem.addEventListener('click', contacts);

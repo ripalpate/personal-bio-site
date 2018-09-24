@@ -51,6 +51,15 @@ const aboutMeElem = document.getElementById('navToBio');
 const technologiesElem = document.getElementById('navToTechnologies');
 const projectsPageElem = document.getElementById('navToProjects');
 const contactElem = document.getElementById('navToContacts');
+const homeElem = document.getElementById('navToHome');
+
+
+//function for click on Home
+const home = () => {
+    homeElem.setAttribute('href', "#home");
+}
+// event listener for Projects
+homeElem.addEventListener('click', home);
 
 // function for click on About Me
 const aboutMe = () => {
@@ -79,3 +88,17 @@ const contacts = () => {
 }
 // event listener for Projects
 contactElem.addEventListener('click', contacts);
+
+// function for sticky footer
+window.onscroll =() => {stickyNavBar()};
+
+const navbar = document.getElementById("navbar");
+const sticky = navbar.offsetTop;
+
+const stickyNavBar = () => {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

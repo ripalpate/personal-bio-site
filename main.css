@@ -3,9 +3,6 @@
     margin-right: 0px;
     
 }
-body {
-    background-color:#3eb4c1;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -21,8 +18,17 @@ body {
     list-style: none;
     font-size:1.2em;
 }
-#navToHome, #navToBio, #navToTechnologies, #navToProjects {
+#nav_links :hover {
+    background-color:  #cc80ff;
+}
+#navToHome, #navToBio, #navToTechnologies, #navToProjects, #navToContacts {
     padding-right: 30px;
+    background-color: #c406dd;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
 }
 .main_nav, #nav_links {
     display: flex;
@@ -46,6 +52,9 @@ body {
     height: 100%;
     flex-direction: column;
     text-align: center;
+    background-image: url(/images/background-image-2.jpg);
+    color: white;
+    
 }
 .name {
     font-size: 6em;
@@ -80,6 +89,8 @@ body {
     padding-top:50px;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: black;
+    color: white;
 }
 .technologies_header {
     text-align: center;
@@ -122,6 +133,9 @@ body {
     flex-shrink: 0;
     margin-bottom: 20px;
     padding-top:50px;
+    background-color: black;
+    color:white;
+    padding-bottom: 30px;
    
 }
 .footer_heading {

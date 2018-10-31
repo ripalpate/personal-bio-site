@@ -9,24 +9,25 @@ const printToDom = (stringToPrint, divId) => {
 };
 
 // function to print projects on webpage
-const createProjectCards = () => {
+const createProjectCards = (projects) => {
   let newProjectCard = '';
-  newProjectCard = '<h3 class="project_header">Projects</h3>';
-  for (let i = 0; i < projects.length; i++) {
-    newProjectCard += '<div class="cardContainer">';
-    newProjectCard += `<h2>${projects[i].title}</h2>`;
-    newProjectCard += `<img src="${projects[i].screenshot}"></img>`;
-    newProjectCard += `<p>${projects[i].description}</p>`;
-    newProjectCard += `<h4>${projects[i].technologiesUsed}</h4>`;
-    newProjectCard += `<h3>${projects[i].available}</h3>`;
-    newProjectCard += `<a href="https://${projects[i].url}" target="_blank">View Project</a>`;
-    newProjectCard += `<p><a href="https://${projects[i].githubUrl}" target="_blank">Git Hub</a><p>`;
-    newProjectCard += '</div>';
-    if (projects[i].available === true) {
+  projects.forEach((project) => {
+    newProjectCard += `<h3 class="project_header">Projects</h3>;
+                        <div class="cardContainer">;
+                            <h2>${project.title}</h2>
+                            <img src="${project.screenshot}"></img>
+                            <p>${project.description}</p>
+                            <h4>${project.technologiesUsed}</h4>
+                            <h3>${projects.available}</h3>
+                            <a href="https://${project.url}" target="_blank">View Project</a>
+                            <p><a href="https://${project.githubUrl}" target="_blank">Git Hub</a><p>
+                        </div>;`;
+    if (project.available === true) {
       printToDom(newProjectCard, 'projectsPage');
     }
-  }
+  });
 };
+
 createProjectCards();
 
 // Variables to collect navigation element

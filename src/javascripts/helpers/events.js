@@ -1,41 +1,43 @@
+import $ from 'jquery';
+
 // Variables to collect navigation element
-const aboutMeElem = document.getElementById('navToBio');
-const technologiesElem = document.getElementById('navToTechnologies');
-const projectsPageElem = document.getElementById('navToProjects');
-const contactElem = document.getElementById('navToContacts');
-const homeElem = document.getElementById('navToHome');
+const aboutMeElem = $('#navToBio');
+const technologiesElem = $('#navToTechnologies');
+const projectsPageElem = $('#navToProjects');
+const contactElem = $('#navToContacts');
+const homeElem = $('#navToHome');
 
-// function for click on Home
+// function to set href on Home
 const home = () => {
-  homeElem.setAttribute('href', '#home');
+  homeElem.attr('href', '#home');
 };
-// event listener for Projects
-homeElem.addEventListener('click', home);
 
-// function for click on About Me
+// function to set href on AboutMe
 const aboutMe = () => {
-  aboutMeElem.setAttribute('href', '#bioPage');
+  aboutMeElem.attr('href', '#bioPage');
 };
-// EventListener for About Me
-aboutMeElem.addEventListener('click', aboutMe);
 
-// function for clcik on technologies
+// function to set href on Technologies
 const technologies = () => {
-  technologiesElem.setAttribute('href', '#technologiesPage');
+  technologiesElem.attr('href', '#technologiesPage');
 };
-// event listener for Technologies
-technologiesElem.addEventListener('click', technologies);
 
-// function for clcik on projects
+// function to set href on Projects
 const projectsDisplay = () => {
-  projectsPageElem.setAttribute('href', '#projectsPage');
+  projectsPageElem.attr('href', '#projectsPage');
 };
-// event listener for Projects
-projectsPageElem.addEventListener('click', projectsDisplay);
 
-// function for click on Contacts
+// function to set href on Contacts
 const contacts = () => {
-  contactElem.setAttribute('href', '#contactPage');
+  contactElem.attr('href', '#contactPage');
 };
-// event listener for Projects
-contactElem.addEventListener('click', contacts);
+
+const bindEvents = () => {
+  homeElem.on('click', () => { home(); });
+  aboutMeElem.on('click', () => { aboutMe(); });
+  technologiesElem.on('click', () => { technologies(); });
+  projectsPageElem.on('click', () => { projectsDisplay(); });
+  contactElem.on('click', () => { contacts(); });
+};
+
+export default { bindEvents };

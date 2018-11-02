@@ -8,7 +8,7 @@ const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
     newProjectCard += `<h3 class="project_header">Projects</h3>;
-                        <div class="cardContainer">;
+                        <div class="cardContainer">
                             <h2>${project.title}</h2>
                             <img src="${project.screenshot}"></img>
                             <p>${project.description}</p>

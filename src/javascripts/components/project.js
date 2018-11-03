@@ -4,6 +4,9 @@ import htmlPhoto from '../../images/html.png';
 import cssPhoto from '../../images/css.png';
 import gitPhoto from '../../images/github.jpg';
 import jsPhoto from '../../images/js.png';
+import mailPhoto from '../../images/mail.png';
+import linkedInPhoto from '../../images/linkedIn.png';
+import githubPhoto from '../../images/git.jpg';
 import projectData from '../data/projectData';
 
 
@@ -11,6 +14,10 @@ $('#htmlPhoto').attr('src', htmlPhoto);
 $('#cssPhoto').attr('src', cssPhoto);
 $('#gitPhoto').attr('src', gitPhoto);
 $('#jsPhoto').attr('src', jsPhoto);
+$('#mailPhoto').attr('src', mailPhoto);
+$('#linkedInPhoto').attr('src', linkedInPhoto);
+$('#gitHubPhoto').attr('src', githubPhoto);
+
 // function to print projects on webpage
 const createProjectCards = (projects) => {
   let newProjectCard = '';

@@ -1,8 +1,16 @@
 import $ from 'jquery';
 import 'bootstrap';
-
+import htmlPhoto from '../../images/html.png';
+import cssPhoto from '../../images/css.png';
+import gitPhoto from '../../images/github.jpg';
+import jsPhoto from '../../images/js.png';
 import projectData from '../data/projectData';
 
+
+$('#htmlPhoto').attr('src', htmlPhoto);
+$('#cssPhoto').attr('src', cssPhoto);
+$('#gitPhoto').attr('src', gitPhoto);
+$('#jsPhoto').attr('src', jsPhoto);
 // function to print projects on webpage
 const createProjectCards = (projects) => {
   let newProjectCard = '';
@@ -23,8 +31,8 @@ const createProjectCards = (projects) => {
 };
 
 const initializeProjectView = () => {
-  projectData.loadProjects().then((projects) => {
-    createProjectCards(projects);
+  projectData.loadProjects().then((data) => {
+    createProjectCards(data.data);
   }).catch((error) => {
     console.error(error);
   });

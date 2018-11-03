@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development';
 const isDev = env === 'development';
-// const isProd = env === 'production';
+const isProd = env === 'production';
 
 const extractScss = new ExtractTextPlugin({
   filename: 'index.css',
@@ -31,7 +31,18 @@ module.exports = {
       test: /\.js$/,
       exclude: /node_modules/,
       use: 'eslint-loader'
-    }, {
+    }, 
+    {
+      test: /\.(png|jp(e*)g|svg)$/,  
+      use: [{
+          loader: 'url-loader',
+          options: { 
+              limit: 8000, // Convert images < 8kb to base64 strings
+              name: 'images/[hash]-[name].[ext]'
+          } 
+      }]
+    },
+    {
       test: /\.js$/,
       exclude: /node_modules/,
       use: 'babel-loader'

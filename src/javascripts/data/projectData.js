@@ -1,13 +1,6 @@
-import $ from 'jquery';
 
-const loadProjects = () => new Promise((resolve, reject) => {
-  $.get('http://localhost:3001/projects')
-    .done((data) => {
-      resolve(data);
-    })
-    .fail((error) => {
-      reject(error);
-    });
-});
+import axios from 'axios';
+
+const loadProjects = () => axios.get('http://localhost:3001/projects');
 
 export default { loadProjects };

@@ -7,6 +7,12 @@ import jsPhoto from '../../images/js.png';
 import mailPhoto from '../../images/mail.png';
 import linkedInPhoto from '../../images/linkedIn.png';
 import githubPhoto from '../../images/git.jpg';
+import jqueryPhoto from '../../images/jquery-icon.png';
+import webpackPhoto from '../../images/webpack.png';
+import bootstrapPhoto from '../../images/bootstrap.png';
+import sassPhoto from '../../images/sass.png';
+import firebasePhoto from '../../images/firebase.png';
+import reactPhoto from '../../images/react.png';
 import projectData from '../data/projectData';
 
 
@@ -17,6 +23,12 @@ $('#jsPhoto').attr('src', jsPhoto);
 $('#mailPhoto').attr('src', mailPhoto);
 $('#linkedInPhoto').attr('src', linkedInPhoto);
 $('#gitHubPhoto').attr('src', githubPhoto);
+$('#jqueryPhoto').attr('src', jqueryPhoto);
+$('#webpackPhoto').attr('src', webpackPhoto);
+$('#bootstrapPhoto').attr('src', bootstrapPhoto);
+$('#sassPhoto').attr('src', sassPhoto);
+$('#firebasePhoto').attr('src', firebasePhoto);
+$('#reactPhoto').attr('src', reactPhoto);
 
 // function to print projects on webpage
 const createProjectCards = (projects) => {

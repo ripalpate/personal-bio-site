@@ -48,8 +48,7 @@
     flex-direction: column;
     text-align: center;
     background-image: url(images/background-image-2.jpg);
-    color: white;
-    
+    color: white; 
 }
 .name {
     font-size: 6em;
@@ -80,7 +79,7 @@
     padding: 10px;
 }
 #technologiesPage{
-    height: 40%;
+    height: 50%;
     padding-top:75px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -91,15 +90,18 @@
     text-align: center;
     font-size: 2em;
     font-family: 'Lobster Two', cursive;
+    padding-bottom:30px;
 }
 .technologies_list_container, .technologies_list {
     display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
+    justify-content: center;
+    // border-radius: 10px;
+    flex-wrap: wrap
 }
 .technologies_list {
     list-style: none;
-    width: 100%;
+    max-width: 50%;
+    padding-inline-start: 0px;
 }
 .list_item {
     padding: 5px 20px;
@@ -137,9 +139,14 @@
     font-family: 'Lobster Two', cursive;
     text-align: center;
     font-size: 2em;
+    padding-bottom:30px;
 }
 .contact_links {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+}
+.contact_links p {
+    padding-left: 20px;
+    padding-right: 20px;
 }

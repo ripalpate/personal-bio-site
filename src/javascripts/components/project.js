@@ -13,6 +13,8 @@ import bootstrapPhoto from '../../images/bootstrap.png';
 import sassPhoto from '../../images/sass.png';
 import firebasePhoto from '../../images/firebase.png';
 import reactPhoto from '../../images/react.png';
+import npmPhoto from '../../images/npmlogo.png';
+import git from '../../images/git1.png';
 import projectData from '../data/projectData';
 
 
@@ -29,12 +31,14 @@ $('#bootstrapPhoto').attr('src', bootstrapPhoto);
 $('#sassPhoto').attr('src', sassPhoto);
 $('#firebasePhoto').attr('src', firebasePhoto);
 $('#reactPhoto').attr('src', reactPhoto);
+$('#npmPhoto').attr('src', npmPhoto);
+$('#git').attr('src', git);
 
 // function to print projects on webpage
 const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
-    newProjectCard += `<h3 class="project_header">Projects</h3>;
+    newProjectCard += `<h3 class="project_header">PROJECTS</h3>;
                         <div class="cardContainer">
                             <h2>${project.title}</h2>
                             <img src="${project.screenshot}"></img>

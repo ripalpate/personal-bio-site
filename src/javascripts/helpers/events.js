@@ -24,7 +24,7 @@ const technologies = () => {
 
 // function to set href on Projects
 const projectsDisplay = () => {
-  projectsPageElem.attr('href', '#projectsPage');
+  projectsPageElem.attr('href', '#projects');
 };
 
 // function to set href on Contacts

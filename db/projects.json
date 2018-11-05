@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Cool Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
       "description": "This is the best project", 
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,
@@ -11,7 +11,7 @@
     },
     {
       "title": "Awesome Project", 
-      "screenshot": "http://gotoflashgames.com/files/file/033.jpg", 
+      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
       "description": "This is the better project", 
       "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
       "available": true,

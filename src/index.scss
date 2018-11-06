@@ -81,13 +81,15 @@ $font-family:'Domine', serif;
 }
 .profile-pic {
     max-width: 45%;
-    margin: 3.5% 3.5%;
+    margin: 3.5% 4.5%;
+}
+.my-photo {
+    border-radius: 10px 100px / 120px;
 }
 .name_title {
     font-family: $font-family;
     font-weight: bold;
     font-size: 2em;
-    // text-align: left;
 }
 .description {
     font-size: 1.2em;
@@ -97,26 +99,27 @@ $font-family:'Domine', serif;
 #technologiesPage{
     height: 60%;
     padding-top:95px;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
     background-color: black;
     color: white;
 }
 .technologies_header {
-    // text-align: left;
     font-size: 2em;
     font-family: $font-family;
     padding-bottom:30px;
 }
-.technologies_list_container, .technologies_list {
+.technologies_list_container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap
 }
 .technologies_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
     list-style: none;
-    max-width: 50%;
-    padding-inline-start: 0px;
+    max-width: 55%;
+    margin: 0 auto;
+    // padding-inline-start: 0px;
 }
 .list_item {
     padding: 5px 20px;

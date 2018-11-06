@@ -1,11 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-
+$font-family:'Domine', serif;
 *{
     margin-left:0px;
     margin-right: 0px; 
-}
-.name {
-    padding: 5px 15px; 
 }
 #nav_links {
     margin: 15px;
@@ -55,29 +52,42 @@
     color: white; 
 }
 .name {
-    font-size: 6em;
+    font-size: 7em;
     margin-top:40px;
-    padding-top: 80px;
+    padding-top: 100px;
     margin-bottom:20px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Tangerine', cursive;
 }
 .header_description {
     font-size: 2em;
     margin-top: 0px;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-family;
 }
 #biopage {
-    height: 60%;
+    display: flex;
+    max-height: 65%;
     // margin-bottom: 20px;
-    padding-top :95px;
+    padding-top :65px;
     background-image: url('images/white-bg.jpg');
     background-size:cover;
 }
+.bio-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.aboutMe{
+    max-width: 60%;
+    margin:1.5% 1.5%; 
+}
+.profile-pic {
+    max-width: 45%;
+    margin: 3.5% 3.5%;
+}
 .name_title {
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     font-weight: bold;
     font-size: 2em;
-    text-align: center;
+    // text-align: left;
 }
 .description {
     font-size: 1.2em;
@@ -93,9 +103,9 @@
     color: white;
 }
 .technologies_header {
-    text-align: center;
+    // text-align: left;
     font-size: 2em;
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     padding-bottom:30px;
 }
 .technologies_list_container, .technologies_list {
@@ -113,15 +123,15 @@
 }
 .project_cards_container{
     height:130%;
-    padding-top:80px;
+    padding-top:85px;
     background-image: url('images/white-bg.jpg');
     background-size:cover;
 }
 .project_header {
     // padding-top: 20px;
-    text-align: center;
+    // text-align: left;
     font-size: 2em;
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
 }
 .cardContainer {
     width: 45%; 
@@ -142,7 +152,7 @@
     background-size:100% 100%;
 }
 .footer_heading {
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     text-align: center;
     font-size: 2em;
     padding-bottom:30px;
@@ -160,7 +170,7 @@
     position: relative;
     width: 24px;
     height: 24px;
-    margin-top: 220px;
+    margin-top: 180px;
 }
 .arrow{
     position: absolute;
@@ -218,6 +228,7 @@
     white-space: nowrap;
     opacity: .25;
     animation: pulse 2s linear alternate infinite;
+    font-family: $font-family;
   }
   
   @keyframes pulse {

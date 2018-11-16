@@ -4,18 +4,22 @@ $font-family:'Domine', serif;
     margin-left:0px;
     margin-right: 0px; 
 }
+ .navbar-toggler-icon {
+background-image : url('http://www.stickpng.com/assets/images/588a64e7d06f6719692a2d11.png');
+}
+.navbar-toggler {
+    border : 1px solid #fff;
+}
 #nav_links {
-    margin: 15px;
-    padding: 10px 20px;
-    list-style: none;
     font-size:1.2em;
+    max-width: 350px;
+    margin: 0 auto;
 }
 #nav_links :hover {
     background-color: #ff80b3;
     text-decoration: none;
 }
 #navToHome, #navToBio, #navToTechnologies, #navToProjects, #navToContacts, #navToResume {
-    padding-right: 30px;
     background-color: #ff1a75;
     border-radius: 5px;
     margin: 10px;
@@ -23,15 +27,12 @@ $font-family:'Domine', serif;
     padding: 5px 10px;
     color: white;
 }
-.main_nav, #nav_links {
-    display: flex;
-}
+
 .nav_item {
     cursor: pointer;
     text-decoration: none;
 }
 .main_nav {
-    flex-direction: row; 
     justify-content: flex-end;
     position: fixed;
     top: 0;
@@ -227,5 +228,12 @@ $font-family:'Domine', serif;
   @keyframes pulse {
     to {
       opacity: 1;
+    }
+}
+
+@media (min-width:992px) {
+    #nav_links{
+        max-width: unset;
+        margin: unset;
     }
 }

@@ -48,7 +48,6 @@ background-image : url('http://www.stickpng.com/assets/images/588a64e7d06f671969
     width:100%;
     height: 100%;
     flex-direction: column;
-    text-align: center;
     background-image: url('images/pretty-shiny-wallpaper-1.jpg');
     color: white; 
 }
@@ -230,10 +229,15 @@ background-image : url('http://www.stickpng.com/assets/images/588a64e7d06f671969
       opacity: 1;
     }
 }
-
+// Media Queries
 @media (min-width:992px) {
     #nav_links{
         max-width: unset;
         margin: unset;
+    }
+}
+@media (min-width: 768px) {
+    .main_header {
+        width: 100%;
     }
 }

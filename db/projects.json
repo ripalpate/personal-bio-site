@@ -1,6 +1,7 @@
 {
-  "projects": [
-    {
+  "projects": {
+  "project1":     
+  {
       "title": "Cool Project", 
       "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
       "description": "This is the best project", 
@@ -9,6 +10,7 @@
       "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
       "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
     },
+    "project2":
     {
       "title": "Awesome Project", 
       "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
@@ -17,6 +19,16 @@
       "available": true,
       "url": "https://github.com/ripalpate/grpproject1", 
       "githubUrl": "https://github.com/ripalpate/grpproject1"
+    },
+    "project3":
+    {
+      "title": "Ok Project", 
+      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
+      "description": "This is not satisfactory project", 
+      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "available": false,
+      "url": "https://github.com/ripalpate/grpproject1", 
+      "githubUrl": "https://github.com/ripalpate/grpproject1"
     }
-]
+  }
 }

@@ -132,7 +132,6 @@ background-image : url('images/lines.png');
     
 }
 .project_cards_container{
-    height:130%;
     padding-top:85px;
     background-image: url('images/white-bg.jpg');
     background-size:cover;
@@ -141,11 +140,12 @@ background-image : url('images/lines.png');
     font-size: 2em;
     font-family: $font-family;
 }
+.projectsWrapper {
+    display: inline-block;
+}
 .cardContainer {
-    width: 45%; 
-    display:inline-block;
-    margin:1.5% 1.5%; 
-    // text-align: center;
+    width: 50%; 
+    margin:1% 1%; 
 }
 .page-footer {
     display: flex;

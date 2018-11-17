@@ -38,16 +38,20 @@ $('#git').attr('src', git);
 const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
-    newProjectCard += `<div class="cardContainer col-md-3">
-                          <img src="${project.screenshot}" width='300px'></img>
-                      </div>
-                      <div class="cardContainer col-md-auto">
-                          <h2>${project.title}</h2>
-                          <p>${project.description}</p>
-                          <h4>${project.technologiesUsed}</h4>
-                          <a href="https://${project.url}" target="_blank">View Project</a>
-                          <p><a href="https://${project.githubUrl}" target="_blank">Git Hub</a><p>
-                        </div>`;
+    newProjectCard += `<div class="projectsWrapper">
+                          <div class="card cardContainer">
+                            <div class="imageContainer">
+                              <img src="${project.screenshot}" class="card-img-top"></img>
+                            </div>
+                            <div class="card-body descContainer">
+                              <h2 class="card-title">${project.title}</h2>
+                              <p class="card-text">${project.description}</p>
+                              <h4 class="card-text">${project.technologiesUsed}</h4>
+                              <a href="https://${project.url}" target="_blank" class="btn btn-primary">View Project</a>
+                              <a href="https://${project.githubUrl}" target="_blank" class="btn btn-primary">Git Hub</a>
+                            </div>
+                          </div>
+                      </div>`;
     if (project.available === true) {
       $('#projectsPage').html(newProjectCard);
     }

@@ -120,8 +120,16 @@ background-image : url('http://www.stickpng.com/assets/images/588a64e7d06f671969
 .list_item {
     padding: 5px 20px;
     display:inline-block;
-    width: 12.5%;
+  // width: 12.5%;
+    width: 160px;    
+    //min-width: 100px;
     margin: 1%;
+    text-align: center
+}
+
+.technologies_list .list_item img {
+    height: 70px;
+    
 }
 .project_cards_container{
     height:130%;

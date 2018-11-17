@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-$font-family:'Domine', serif;
+@import "./styles/variables";
 *{
     margin-left:0px;
     margin-right: 0px; 
@@ -131,22 +131,7 @@ background-image : url('images/lines.png');
     height: 70px;
     
 }
-.project_cards_container{
-    padding-top:85px;
-    background-image: url('images/white-bg.jpg');
-    background-size:cover;
-}
-.project_header {
-    font-size: 2em;
-    font-family: $font-family;
-}
-.projectsWrapper {
-    display: inline-block;
-}
-.cardContainer {
-    width: 50%; 
-    margin:1% 1%; 
-}
+
 .page-footer {
     display: flex;
     flex-direction: column;

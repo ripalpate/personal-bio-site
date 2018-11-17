@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap';
+import './project.scss';
 import htmlPhoto from '../../images/html.png';
 import cssPhoto from '../../images/css.png';
 import gitPhoto from '../../images/github.jpg';
@@ -38,7 +39,7 @@ $('#git').attr('src', git);
 const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
-    newProjectCard += `<div class="projectsWrapper">
+    newProjectCard += `<div class="projectsWrapper" id="projectWrapper">
                           <div class="card cardContainer">
                             <div class="imageContainer">
                               <img src="${project.screenshot}" class="card-img-top"></img>

@@ -1,12 +1,14 @@
 import 'jquery';
+import firebase from 'firebase/app';
+import apiKeys from '../db/apiKeys.json';
 import 'bootstrap';
-
 import './index.scss';
-import movieView from './javascripts/components/project';
+import projectView from './javascripts/components/project';
 import events from './javascripts/helpers/events';
 
 const initializeApp = () => {
-  movieView.initializeProjectView();
+  firebase.initializeApp(apiKeys.firebaseKeys);
+  projectView.initializeProjectView();
   events.bindEvents();
 };
 

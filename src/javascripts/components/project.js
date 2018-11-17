@@ -55,8 +55,9 @@ const createProjectCards = (projects) => {
 };
 
 const initializeProjectView = () => {
-  projectData.loadProjects().then((data) => {
-    createProjectCards(data.data);
+  projectData.getAllProjectsFromDb().then((data) => {
+    console.log(data);
+    createProjectCards(data);
   }).catch((error) => {
     console.error(error);
   });

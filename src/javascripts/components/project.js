@@ -41,10 +41,10 @@ const createProjectCards = (projects) => {
   projects.forEach((project) => {
     newProjectCard += `<div class="projectsWrapper" id="projectWrapper">
                           <div class="card cardContainer">
-                            <div class="imageContainer">
+                            <div class="imageContainer front face">
                               <img src="${project.screenshot}" class="card-img-top"></img>
                             </div>
-                            <div class="card-body descContainer">
+                            <div class="card-body descContainer back face">
                               <h2 class="card-title">${project.title}</h2>
                               <p class="card-text">${project.description}</p>
                               <h4 class="card-text">${project.technologiesUsed}</h4>

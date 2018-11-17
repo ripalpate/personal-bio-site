@@ -1,24 +1,25 @@
 @import "~bootstrap/scss/bootstrap";
-
+$font-family:'Domine', serif;
 *{
     margin-left:0px;
     margin-right: 0px; 
 }
-.name {
-    padding: 5px 15px; 
+ .navbar-toggler-icon {
+background-image : url('images/lines.png');
+}
+.navbar-toggler {
+    border : 1px solid #fff;
 }
 #nav_links {
-    margin: 15px;
-    padding: 10px 20px;
-    list-style: none;
     font-size:1.2em;
+    max-width: 350px;
+    margin: 0 auto;
 }
 #nav_links :hover {
     background-color: #ff80b3;
     text-decoration: none;
 }
 #navToHome, #navToBio, #navToTechnologies, #navToProjects, #navToContacts, #navToResume {
-    padding-right: 30px;
     background-color: #ff1a75;
     border-radius: 5px;
     margin: 10px;
@@ -26,15 +27,12 @@
     padding: 5px 10px;
     color: white;
 }
-.main_nav, #nav_links {
-    display: flex;
-}
+
 .nav_item {
     cursor: pointer;
     text-decoration: none;
 }
 .main_nav {
-    flex-direction: row; 
     justify-content: flex-end;
     position: fixed;
     top: 0;
@@ -50,34 +48,48 @@
     width:100%;
     height: 100%;
     flex-direction: column;
-    text-align: center;
     background-image: url('images/pretty-shiny-wallpaper-1.jpg');
     color: white; 
 }
 .name {
-    font-size: 6em;
+    font-size: 7em;
     margin-top:40px;
-    padding-top: 80px;
+    padding-top: 100px;
     margin-bottom:20px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Tangerine', cursive;
 }
 .header_description {
     font-size: 2em;
     margin-top: 0px;
-    font-family: 'Oswald', sans-serif;
+    font-family: $font-family;
 }
 #biopage {
-    height: 60%;
+    display: flex;
+    max-height: 65%;
     // margin-bottom: 20px;
-    padding-top :95px;
+    padding-top :65px;
     background-image: url('images/white-bg.jpg');
     background-size:cover;
 }
+.bio-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.aboutMe{
+    max-width: 60%;
+    margin:1.5% 1.5%; 
+}
+.profile-pic {
+    max-width: 45%;
+    margin: 3.5% 4.5%;
+}
+.my-photo {
+    border-radius: 10px 100px / 120px;
+}
 .name_title {
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     font-weight: bold;
     font-size: 2em;
-    text-align: center;
 }
 .description {
     font-size: 1.2em;
@@ -85,43 +97,49 @@
     padding: 10px;
 }
 #technologiesPage{
-    height: 60%;
+    height: 65%;
     padding-top:95px;
-    // margin-top: 20px;
-    // margin-bottom: 20px;
     background-color: black;
     color: white;
 }
 .technologies_header {
-    text-align: center;
     font-size: 2em;
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     padding-bottom:30px;
 }
-.technologies_list_container, .technologies_list {
+.technologies_list_container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap
 }
 .technologies_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style: none;
-    max-width: 50%;
-    padding-inline-start: 0px;
 }
 .list_item {
     padding: 5px 20px;
+    display:inline-block;
+  // width: 12.5%;
+    width: 160px;    
+    //min-width: 100px;
+    margin: 1%;
+    text-align: center
+}
+
+.technologies_list .list_item img {
+    height: 70px;
+    
 }
 .project_cards_container{
     height:130%;
-    padding-top:80px;
+    padding-top:85px;
     background-image: url('images/white-bg.jpg');
     background-size:cover;
 }
 .project_header {
-    // padding-top: 20px;
-    text-align: center;
     font-size: 2em;
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
 }
 .cardContainer {
     width: 45%; 
@@ -132,35 +150,28 @@
 .page-footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex-shrink: 0;
-    // margin-bottom: 20px;
     padding-top:50px;
     color:white;
-    padding-bottom: 30px;
-    background-image: url('images/background-image-2.jpg');
+    background-image: url('images/contacts.jpg');
     background-size:100% 100%;
+    height: 45%;
 }
 .footer_heading {
-    font-family: 'Lobster Two', cursive;
+    font-family: $font-family;
     text-align: center;
     font-size: 2em;
-    padding-bottom:30px;
+    padding-bottom:40px;
 }
 .contact_links {
     display:flex;
     flex-direction: row;
-    justify-content: center;
-}
-.contact_links p {
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content:space-around;
 }
 .arrow-container {
     position: relative;
     width: 24px;
     height: 24px;
-    margin-top: 220px;
+    margin-top: 155px;
 }
 .arrow{
     position: absolute;
@@ -210,7 +221,7 @@
   }
   .text {
     display: block;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: -50px;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -218,10 +229,23 @@
     white-space: nowrap;
     opacity: .25;
     animation: pulse 2s linear alternate infinite;
+    font-family: $font-family;
   }
   
   @keyframes pulse {
     to {
       opacity: 1;
+    }
+}
+// Media Queries
+@media (min-width:992px) {
+    #nav_links{
+        max-width: unset;
+        margin: unset;
+    }
+}
+@media (min-width: 768px) {
+    .main_header {
+        width: 100%;
     }
 }

@@ -122,6 +122,8 @@ background-image : url('images/lines.png');
     display: inline-block;
    // width: 10%;
     margin: 1%;
+    max-width: 680px;
+   
 }
 .list_item {
     // padding: 5px 20px;
@@ -129,7 +131,8 @@ background-image : url('images/lines.png');
     // width: 160px;    
     // margin: 2.5%;
     // text-align: center
-    height:150px;
+    max-height:70px;
+    margin: 15px;
     //position: relative;
     display: inline-block;
    
@@ -139,8 +142,8 @@ background-image : url('images/lines.png');
 //     height: 70px; 
 // }
 .tech-image {
-    max-width:90%;
-    max-height: 50%;
+    // max-width: 90%;
+    max-height: 70px;
     // position: absolute;
     // top:50%;
     // left:50%;
@@ -247,5 +250,19 @@ background-image : url('images/lines.png');
 @media (min-width: 768px) {
     .main_header {
         width: 100%;
+    }
+}
+@media (max-width: 670px) {
+    .technologies_list {
+        max-width: 480px;
+    }
+}
+@media (max-width: 472px) {
+    .technologies_list {
+        max-width: 330px;
+    }
+    .list_item {
+        max-height:70px;
+        margin: 10px; 
     }
 }

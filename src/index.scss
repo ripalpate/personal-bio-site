@@ -16,8 +16,11 @@ background-image : url('images/lines.png');
     margin: 0 auto;
 }
 #nav_links :hover {
-    background-color: #ff80b3;
+    color: #ff80b3;
     text-decoration: none;
+    background-color: #fff;
+    border: 2px solid #ff1a75;
+
 }
 #navToHome, #navToBio, #navToTechnologies, #navToProjects, #navToContacts, #navToResume {
     background-color: #ff1a75;

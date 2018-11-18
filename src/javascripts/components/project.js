@@ -42,7 +42,7 @@ const createProjectCards = (projects) => {
     newProjectCard += `<div class="projectsWrapper">
                           <div class="card cardContainer">
                             <div class="imageContainer front face">
-                              <img src="${project.screenshot}" class="card-img-top"></img>
+                              <img src="${project.screenshot}" class="card-img"></img>
                             </div>
                             <div class="card-body descContainer back face">
                               <h2 class="card-title">${project.title}</h2>

@@ -10,18 +10,21 @@
   font-family: $font-family;
 }
 .projectsWrapper {
-  // display: inline-block;
+  display: inline-block;
   position: relative;
-  margin:10px auto;
-  width:"450px";
-  // height: "300px";
-  perspective: 1000;
+  // margin:10px auto;
+  // width:450px;
+  height:400px;
 }
-
+#projectsPage {
+  // max-width: 750px;
+  // margin: 0 auto;
+  text-align: center;
+}
 .cardContainer {
-  width: 30%; 
-  margin:1% 1%; 
-  height: 100%;
+  width: 300px; 
+  margin: 30px;
+  // height: 350px;
   transform-style: preserve-3d;
   transition: all 2.0s linear;
 }
@@ -33,14 +36,15 @@
 
 .face {
   position: absolute;
-  width: 100%;
-  height: 40%;
+  // width: 100%;
+  // height: 200px;
   backface-visibility: hidden;
 }
 .face.back {
-  display: block;
+  height: 300px;
+  // display: block;
   transform: rotateY(180deg);
-  box-sizing: border-box;
+  // box-sizing: border-box;
   padding: 10px;
   color: white;
   text-align: center;

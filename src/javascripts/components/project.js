@@ -39,7 +39,7 @@ $('#git').attr('src', git);
 const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
-    newProjectCard += `<div class="projectsWrapper" id="projectWrapper">
+    newProjectCard += `<div class="projectsWrapper">
                           <div class="card cardContainer">
                             <div class="imageContainer front face">
                               <img src="${project.screenshot}" class="card-img-top"></img>

@@ -14,7 +14,7 @@ import bootstrapPhoto from '../../images/bootstrap.png';
 import sassPhoto from '../../images/sass.png';
 import firebasePhoto from '../../images/firebase.png';
 import reactPhoto from '../../images/react.png';
-import npmPhoto from '../../images/npmlogo.png';
+import npmPhoto from '../../images/npmlogo1.png';
 import git from '../../images/git1.png';
 import projectData from '../data/projectData';
 

@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'bootstrap';
+import './project.scss';
 import htmlPhoto from '../../images/html.png';
 import cssPhoto from '../../images/css.png';
 import gitPhoto from '../../images/github.jpg';
@@ -13,7 +14,7 @@ import bootstrapPhoto from '../../images/bootstrap.png';
 import sassPhoto from '../../images/sass.png';
 import firebasePhoto from '../../images/firebase.png';
 import reactPhoto from '../../images/react.png';
-import npmPhoto from '../../images/npmlogo.png';
+import npmPhoto from '../../images/npmlogo1.png';
 import git from '../../images/git1.png';
 import projectData from '../data/projectData';
 
@@ -38,16 +39,20 @@ $('#git').attr('src', git);
 const createProjectCards = (projects) => {
   let newProjectCard = '';
   projects.forEach((project) => {
-    newProjectCard += `<div class="cardContainer col-md-3">
-                          <img src="${project.screenshot}" width='300px'></img>
-                      </div>
-                      <div class="cardContainer col-md-auto">
-                          <h2>${project.title}</h2>
-                          <p>${project.description}</p>
-                          <h4>${project.technologiesUsed}</h4>
-                          <a href="https://${project.url}" target="_blank">View Project</a>
-                          <p><a href="https://${project.githubUrl}" target="_blank">Git Hub</a><p>
-                        </div>`;
+    newProjectCard += `<div class="projectsWrapper">
+                          <div class="card cardContainer">
+                            <div class="imageContainer front face">
+                              <img src="${project.screenshot}" class="card-img"></img>
+                            </div>
+                            <div class="card-body descContainer back face">
+                              <h2 class="card-title">${project.title}</h2>
+                              <p class="card-text">${project.description}</p>
+                              <h4 class="card-text">${project.technologiesUsed}</h4>
+                              <a href="https://${project.url}" target="_blank" class="btn btn-primary">View Project</a>
+                              <a href="https://${project.githubUrl}" target="_blank" class="btn btn-primary">Git Hub</a>
+                            </div>
+                          </div>
+                      </div>`;
     if (project.available === true) {
       $('#projectsPage').html(newProjectCard);
     }

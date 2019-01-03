@@ -36,7 +36,7 @@
 
 .face {
   position: absolute;
-  // backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .face.back {
   height: 400px;

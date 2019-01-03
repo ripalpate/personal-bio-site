@@ -48,8 +48,8 @@ const createProjectCards = (projects) => {
                               <h2 class="card-title">${project.title}</h2>
                               <p class="card-text">${project.description}</p>
                               <h4 class="card-text">${project.technologiesUsed}</h4>
-                              <a href="https://${project.url}" target="_blank" class="btn btn-primary">View Project</a>
-                              <a href="https://${project.githubUrl}" target="_blank" class="btn btn-primary">Git Hub</a>
+                              <a href="${project.url}" target="_blank" class="btn btn-primary">Live Demo</a>
+                              <a href="${project.githubUrl}" target="_blank" class="btn btn-primary">Git Hub</a>
                             </div>
                           </div>
                       </div>`;

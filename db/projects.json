@@ -2,33 +2,33 @@
   "projects": {
   "project1":     
   {
-      "title": "Cool Project", 
+      "title": "To Do App", 
       "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
-      "description": "This is the best project", 
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "description": "This project is an exploration of Firebase for To Do app. When the page is loaded, it asks user to login. Upon login, User will be able to see list of tasks that are open. Users have an ability to add task. They can delete and edit tasks. Upon completion, it will move to completed tasks and cross out the open task.", 
+      "technologiesUsed": "HTML, CSS, JavaScript, Jquery, Bootstrap, Webpack, Firebase, SCSS",
       "available": true,
-      "url": "https://github.com/nss-evening-cohort-8/js-part-deux", 
-      "githubUrl": "https://github.com/nss-evening-cohort-8/js-part-deux"
+      "url": " https://to-do-app-b3bb3.firebaseapp.com", 
+      "githubUrl": "https://github.com/ripalpate/To-do-App"
     },
     "project2":
     {
-      "title": "Awesome Project", 
+      "title": "Developer Portal", 
       "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
-      "description": "This is the better project", 
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
+      "description": "This Application is the exploration of React. As User, When you login via Github, you will see your profile card. It will also allow you to add learning materials categorized in 4 difeerent categories. you will be able to mark resources as completed. When a resource is marked as completed it will show up at the bottom of the tab it belongs to. Further,it gives the ability to delete any references.", 
+      "technologiesUsed": "HTML, CSS, JavaScript, Jquery, Bootstrap, Webpack, Firebase, SCSS, React",
       "available": true,
-      "url": "https://github.com/ripalpate/grpproject1", 
-      "githubUrl": "https://github.com/ripalpate/grpproject1"
+      "url": "developer-plus-plus-82f14.firebaseapp.com", 
+      "githubUrl": "https://github.com/ripalpate/developer-plus-plus"
     },
     "project3":
     {
-      "title": "Ok Project", 
+      "title": "Nutshell Chufas", 
       "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
-      "description": "This is not satisfactory project", 
-      "technologiesUsed": "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-      "available": false,
-      "url": "https://github.com/ripalpate/grpproject1", 
-      "githubUrl": "https://github.com/ripalpate/grpproject1"
+      "description": "This project is group project exploring firebase and Webpack. Nutshell is a dashboard for people to organize their daily weather, events, articles, and chat messages.", 
+      "technologiesUsed": "HTML, JavaScript, Bootstrap, jQuery, Axios, Firebase, CRUD, Webpack",
+      "available": true,
+      "url": "https://nutshell-chufas.firebaseapp.com/", 
+      "githubUrl": "https://github.com/nss-evening-cohort-8/nutshell-chufas"
     }
   }
 }

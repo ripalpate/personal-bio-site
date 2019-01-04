@@ -62,4 +62,9 @@
     margin: 10px;
   }
 }
-
+@media (max-width: 476px) {
+  .project_header {
+      text-align: center;
+      font-size: 1.5em;
+  }
+}

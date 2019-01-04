@@ -216,7 +216,7 @@ background-image : url('images/lines.png');
       opacity: 1;
     }
 }
-// Media Queries
+// Media Queries for navbar
 @media (min-width:992px) {
     #nav_links{
         max-width: unset;
@@ -229,13 +229,14 @@ background-image : url('images/lines.png');
     }
 }
 
-// media query for About Me section
+// Media query for About Me section
 @media (min-width:765px) and (max-width:975px) {
     .my-photo {
         max-width: 210px;
     }
 }
 
+// Media query for technologies
 @media (max-width: 767px) {
     .col-sm-25 {
         width: 25% !important;
@@ -253,7 +254,7 @@ background-image : url('images/lines.png');
         padding: 0 10px 40px;
     }
 }
-
+// Media Query for Home page
 @media (max-width: 418px) {
     .arrow-container {
         margin-top: 120px;
@@ -263,5 +264,12 @@ background-image : url('images/lines.png');
     }
     .header_description {
         font-size: 1.2em;
+    }
+}
+// Media Query for Header of each Section
+@media (max-width: 476px) {
+    .name_title, .technologies_header, .footer_heading {
+        text-align: center;
+        font-size: 1.5em;
     }
 }

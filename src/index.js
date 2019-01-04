@@ -5,11 +5,13 @@ import 'bootstrap';
 import './index.scss';
 import projectView from './javascripts/components/project';
 import events from './javascripts/helpers/events';
+// import imgSrc from './javascripts/helpers/images';
 
 const initializeApp = () => {
   firebase.initializeApp(apiKeys.firebaseKeys);
   projectView.initializeProjectView();
   events.bindEvents();
+  projectView.imgSrc();
 };
 
 initializeApp();

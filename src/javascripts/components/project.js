@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './project.scss';
+import projectData from '../data/projectData';
 import htmlPhoto from '../../images/html.png';
 import cssPhoto from '../../images/css.png';
 import gitPhoto from '../../images/github.jpg';
@@ -17,24 +18,25 @@ import reactPhoto from '../../images/react.png';
 import npmPhoto from '../../images/npmlogo1.png';
 import git from '../../images/git1.png';
 import profilePic from '../../images/me.png';
-import projectData from '../data/projectData';
 
-$('#profilePic').attr('src', profilePic);
-$('#htmlPhoto').attr('src', htmlPhoto);
-$('#cssPhoto').attr('src', cssPhoto);
-$('#gitPhoto').attr('src', gitPhoto);
-$('#jsPhoto').attr('src', jsPhoto);
-$('#mailPhoto').attr('src', mailPhoto);
-$('#linkedInPhoto').attr('src', linkedInPhoto);
-$('#gitHubPhoto').attr('src', githubPhoto);
-$('#jqueryPhoto').attr('src', jqueryPhoto);
-$('#webpackPhoto').attr('src', webpackPhoto);
-$('#bootstrapPhoto').attr('src', bootstrapPhoto);
-$('#sassPhoto').attr('src', sassPhoto);
-$('#firebasePhoto').attr('src', firebasePhoto);
-$('#reactPhoto').attr('src', reactPhoto);
-$('#npmPhoto').attr('src', npmPhoto);
-$('#git').attr('src', git);
+const imgSrc = () => {
+  $('#profilePic').attr('src', profilePic);
+  $('#htmlPhoto').attr('src', htmlPhoto);
+  $('#cssPhoto').attr('src', cssPhoto);
+  $('#gitPhoto').attr('src', gitPhoto);
+  $('#jsPhoto').attr('src', jsPhoto);
+  $('#mailPhoto').attr('src', mailPhoto);
+  $('#linkedInPhoto').attr('src', linkedInPhoto);
+  $('#gitHubPhoto').attr('src', githubPhoto);
+  $('#jqueryPhoto').attr('src', jqueryPhoto);
+  $('#webpackPhoto').attr('src', webpackPhoto);
+  $('#bootstrapPhoto').attr('src', bootstrapPhoto);
+  $('#sassPhoto').attr('src', sassPhoto);
+  $('#firebasePhoto').attr('src', firebasePhoto);
+  $('#reactPhoto').attr('src', reactPhoto);
+  $('#npmPhoto').attr('src', npmPhoto);
+  $('#git').attr('src', git);
+};
 
 // function to print projects on webpage
 const createProjectCards = (projects) => {
@@ -69,4 +71,4 @@ const initializeProjectView = () => {
   });
 };
 
-export default { initializeProjectView };
+export default { initializeProjectView, imgSrc };

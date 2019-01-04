@@ -6,6 +6,7 @@ const technologiesElem = $('#navToTechnologies');
 const projectsPageElem = $('#navToProjects');
 const contactElem = $('#navToContacts');
 const homeElem = $('#navToHome');
+// const navToResume = $('#navToResume');
 
 // function to set href on Home
 const home = () => {
@@ -32,12 +33,17 @@ const contacts = () => {
   contactElem.attr('href', '#contactPage');
 };
 
+// const resume = () => {
+//   navToResume.attr('href', './Resume.pdf');
+// };
+
 const bindEvents = () => {
   homeElem.on('click', () => { home(); });
   aboutMeElem.on('click', () => { aboutMe(); });
   technologiesElem.on('click', () => { technologies(); });
   projectsPageElem.on('click', () => { projectsDisplay(); });
   contactElem.on('click', () => { contacts(); });
+  // navToResume.on('click', () => { resume(); });
 };
 
 export default { bindEvents };

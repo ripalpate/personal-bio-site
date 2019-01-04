@@ -253,3 +253,15 @@ background-image : url('images/lines.png');
         padding: 0 10px 40px;
     }
 }
+
+@media (max-width: 418px) {
+    .arrow-container {
+        margin-top: 120px;
+    }
+    .name {
+        font-size: 5em;
+    }
+    .header_description {
+        font-size: 1.2em;
+    }
+}

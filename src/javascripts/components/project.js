@@ -16,9 +16,10 @@ import firebasePhoto from '../../images/firebase.png';
 import reactPhoto from '../../images/react.png';
 import npmPhoto from '../../images/npmlogo1.png';
 import git from '../../images/git1.png';
+import profilePic from '../../images/me.png';
 import projectData from '../data/projectData';
 
-
+$('#profilePic').attr('src', profilePic);
 $('#htmlPhoto').attr('src', htmlPhoto);
 $('#cssPhoto').attr('src', cssPhoto);
 $('#gitPhoto').attr('src', gitPhoto);

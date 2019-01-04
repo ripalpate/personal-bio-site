@@ -3,7 +3,7 @@
   "project1":     
   {
       "title": "To Do App", 
-      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
+      "screenshot": "https://media.wired.com/photos/5ae0d5ae3f3b183561144216/master/pass/google-tasks.jpg", 
       "description": "This project is an exploration of Firebase for To Do app. A app that allows people to create, edit and delete tasks. It Also gives ability to see completed tasks.", 
       "technologiesUsed": "HTML, CSS, JavaScript, Jquery, Bootstrap, Webpack, Firebase, SCSS",
       "available": true,
@@ -13,7 +13,7 @@
     "project2":
     {
       "title": "Developer Portal", 
-      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
+      "screenshot": "http://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg", 
       "description": "This Application is the exploration of React. A portal to gauge your progress as developer and keep track of resources you are interensted in.", 
       "technologiesUsed": "HTML, CSS, JavaScript, Jquery, Bootstrap, Webpack, Firebase, SCSS, React",
       "available": true,
@@ -23,7 +23,7 @@
     "project3":
     {
       "title": "Nutshell Chufas", 
-      "screenshot": "https://www.what-dog.net/Images/faces2/scroll0015.jpg", 
+      "screenshot": "https://www.ibm.com/analytics/us/en/images/homepage-industry/Analytics-for-Industry-Landing-Leadspace-Animated.gif", 
       "description": "This project is group project exploring firebase and Webpack. Nutshell is a dashboard for people to organize their daily weather, events, articles, and chat messages.", 
       "technologiesUsed": "HTML, JavaScript, Bootstrap, jQuery, Axios, Firebase, CRUD, Webpack",
       "available": true,

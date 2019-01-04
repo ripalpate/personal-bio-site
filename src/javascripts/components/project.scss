@@ -22,10 +22,11 @@
 .cardContainer {
   width: 300px; 
   height: 400px;
-  margin: 50px;
+  margin: 30px;
   transform-style: preserve-3d;
   transition: all 2.0s linear;
   box-shadow: -5px 5px 5px #aaa;
+  // overflow-y: scroll;
 }
 
 .cardContainer:hover {
@@ -35,13 +36,17 @@
 
 .face {
   position: absolute;
-  // backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+.flip-card {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
 .face.back {
   height: 400px;
-  // display: block;
   transform: rotateY(180deg);
-  // box-sizing: border-box;
   padding: 10px;
   color: white;
   text-align: center;
@@ -50,4 +55,16 @@
 }
 .card-img {
   height: 400px;
+}
+
+@media (max-width: 720px) {
+  .cardContainer {
+    margin: 10px;
+  }
+}
+@media (max-width: 476px) {
+  .project_header {
+      text-align: center;
+      font-size: 1.5em;
+  }
 }

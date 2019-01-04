@@ -14,7 +14,6 @@ const getAllProjectsFromDb = () => new Promise((resolve, reject) => {
         Object.keys(allProjectsObject).forEach((projectId) => {
           const newProject = allProjectsObject[projectId];
           newProject.id = projectId;
-          console.log(projectId);
           allProjectsArray.push(newProject);
         });
       }

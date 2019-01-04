@@ -38,11 +38,15 @@
   position: absolute;
   backface-visibility: hidden;
 }
+.flip-card {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
 .face.back {
   height: 400px;
-  // display: block;
   transform: rotateY(180deg);
-  // box-sizing: border-box;
   padding: 10px;
   color: white;
   text-align: center;

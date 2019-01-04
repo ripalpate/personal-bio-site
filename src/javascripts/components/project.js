@@ -44,6 +44,7 @@ const createProjectCards = (projects) => {
                           <div class="card cardContainer">
                             <div class="imageContainer front face">
                               <img src="${project.screenshot}" class="card-img"></img>
+                              <img src="https://static.thenounproject.com/png/267318-200.png" height="30px" alt="flip-card" class="flip-card">
                             </div>
                             <div class="card-body descContainer back face">
                               <h2 class="card-title">${project.title}</h2>
@@ -62,7 +63,6 @@ const createProjectCards = (projects) => {
 
 const initializeProjectView = () => {
   projectData.getAllProjectsFromDb().then((data) => {
-    console.log(data);
     createProjectCards(data);
   }).catch((error) => {
     console.error(error);

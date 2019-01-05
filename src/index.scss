@@ -106,11 +106,12 @@ background-image : url('images/lines.png');
     font-size: 2em;
     font-family: $font-family;
     padding-bottom:30px;
+    padding-left: 15px;
 }
 .technologies_list_container {
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content:center; 
 }
  .technologies_list {
      padding-bottom: 40px;
